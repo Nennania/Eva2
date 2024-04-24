@@ -1,0 +1,49 @@
+* {
+    background-color: #b9935a;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Forma del menú (colores, tamaños) */
+.menu {
+    background-color: #4e3300; /*Color de fondo del menú.*/
+    color: #fff; /*Color de las letras.*/
+    padding: 1rem; /*Área de relleno de los lados del elemento / 1rem = 16px*/
+}
+
+.menu ul {
+    background-color: #4e3300; /*Color de fondo*/
+    list-style: none; /*Hace que no salga el símbolo de la lista.*/
+    display: flex; /*Vuelve la lista flexible.*/
+    justify-content: space-around; /*Justificamos el texto.*/
+}
+
+.menu li {
+    background-color: #4e3300; /*Color de fondo*/
+    margin-right: 1rem; /*Margen derecho de la lista.*/
+}
+
+.menu a {
+    background-color: #4e3300; /*Color de fondo*/
+    text-decoration: none; /*Retira la línea debajo de los textos.*/
+    color: #fff;
+}
+
+/* Menú responsivo. (media query para adaptarlo) */
+@media (max-width: 760px) { /*cuando el ancho de la pantalla sea menor o igual a 760 píxeles se
+                                aplicarán las siguientes indicaciones*/
+    .menu ul {
+        flex-direction: column; /*Cambia la dirección dentro de la lista a una columna vertical.*/
+        align-items: center; /*Se alinearán al centro*/
+    }
+
+    .menu li {
+        margin-bottom: 0.5rem; /*Espaciado entre los elementos de la lista*/
+    }
+}
+
+#catalogo li {
+    list-style: none;
+}
